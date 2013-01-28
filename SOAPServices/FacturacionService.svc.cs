@@ -19,7 +19,7 @@ namespace SOAPServices
         public Factura Facturar(int rucCliente, List<Item> items)
         {
             Cliente cliente = clienteDAO.Obtener(rucCliente);
-            if (cliente == null) // cliente inexistente
+            if (cliente == null) // error por cliente inexistente
                 throw new FaultException<ClienteInexistenteError>(
                     new ClienteInexistenteError()
                     {
