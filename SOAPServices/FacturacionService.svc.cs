@@ -43,7 +43,7 @@ namespace SOAPServices
                 {
                     Pk = new FacturaDetallePK()
                     {
-                        Factura = factura,
+                        Factura = factura.Numero,
                         Producto = producto
                     },
                     Cantidad = item.Cantidad,

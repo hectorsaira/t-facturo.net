@@ -21,7 +21,7 @@ namespace SOAPServices.Dominio
     public class FacturaDetallePK
     {
         [DataMember]
-        public Factura Factura { get; set; }
+        public int Factura { get; set; }
         [DataMember]
         public Producto Producto { get; set; }
 
@@ -35,7 +35,7 @@ namespace SOAPServices.Dominio
 
         public override int GetHashCode()
         {
-            return Factura.Numero;
+            return Factura;
         }
 
     }

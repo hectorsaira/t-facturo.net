@@ -17,5 +17,7 @@ namespace SOAPServices.Dominio
         public DateTime Fecha { get; set; }
         [DataMember]
         public decimal Total { get; set; }
+        [DataMember]
+        public IList<FacturaDetalle> Detalles { get; set; }
     }
 }
